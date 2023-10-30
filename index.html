@@ -1,27 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <link rel="stylesheet" href="https://cdn.notifica.re/libs/web/v3/{{version}}/notificare-in-app-messaging.css" />
-    <link rel="stylesheet" href="https://cdn.notifica.re/libs/web/v3/{{version}}/notificare-push.css" />
-    <link rel="stylesheet" href="https://cdn.notifica.re/libs/web/v3/{{version}}/notificare-push-ui.css" />
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.notifica.re/libs/web/v3/3.0.0/notificare-in-app-messaging.css">
+    <link rel="stylesheet" href="https://cdn.notifica.re/libs/web/v3/3.0.0/notificare-push.css">
+    <link rel="stylesheet" href="https://cdn.notifica.re/libs/web/v3/3.0.0/notificare-push-ui.css">
 </head>
 <body>
 <script type="module">
-    import { } from 'https://cdn.notifica.re/libs/web/v3/{{version}}/notificare-core.js';
-    import { } from 'https://cdn.notifica.re/libs/web/v3/{{version}}/notificare-assets.js';
-    import { } from 'https://cdn.notifica.re/libs/web/v3/{{version}}/notificare-geo.js';
-    import { } from 'https://cdn.notifica.re/libs/web/v3/{{version}}/notificare-in-app-messaging.js';
-    import { } from 'https://cdn.notifica.re/libs/web/v3/{{version}}/notificare-inbox.js';
-    import { } from 'https://cdn.notifica.re/libs/web/v3/{{version}}/notificare-push.js';
-    import { } from 'https://cdn.notifica.re/libs/web/v3/{{version}}/notificare-push-ui.js';
-    import { } from 'https://cdn.notifica.re/libs/web/v3/{{version}}/notificare-user-inbox.js';
-
-    // more code ...
+    import { launch } from 'https://cdn.notifica.re/libs/web/v3/3.0.0/notificare-core.js';
+    import 'https://cdn.notifica.re/libs/web/v3/3.0.0/notificare-in-app-messaging.js';
+    import 'https://cdn.notifica.re/libs/web/v3/3.0.0/notificare-push.js';
+    import 'https://cdn.notifica.re/libs/web/v3/3.0.0/notificare-push-ui.js';
+    launch();
 </script>
 
-
 <h1>
-    Bienvenue sur le site de test
+    Bienvenue
 </h1>
 
 </body>
