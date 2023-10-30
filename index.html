@@ -1,41 +1,28 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <script>
-        //some default pre init
-        var PB = PB || {};PB.q = PB.q || [];PB.events = PB.events || [];
-
-        //PushBots ApplicationId (required)
-        PB.app_id = "653f999899f6e17db25bea95";
-        //Your domain name, must be HTTPS or localhost  (required)
-        PB.domain = "https://alainv62.github.io";
-        //Update and uncomment it if you are using custom safari certificate for your app
-        PB.safari_push_id = "web.com.pushbots.safaripush";
-        //****************************************
-
-        PB.logging_enabled = true;
-        PB.auto_subscribe = true;
-
-        //Custom worker and manifest URL
-        PB.worker_url = PB.domain + "/pushbots-worker.js";
-
-        //Welcome notification message
-        PB.welcome = {title:"Welcome ",message:"Thanks for subscribing!", url :PB.domain};
-
-        function sendNotification(){
-            PB.register();
-            PB.q.push(["sendNotification", {title:"Hey ",message:"Why not?", url :"https://alainv62.github.io"}]);
-        }
-
-    </script>
-
-    <script src="//cdn.pushbots.com/js/sdk.min.js" type="text/javascript" onload="PB.init()" async></script>
-    <script src="//cdn.pushbots.com/js/sdk.min.js" type="text/javascript" onload="PB.init()" async></script>
+    <link rel="stylesheet" href="https://cdn.notifica.re/libs/web/v3/{{version}}/notificare-in-app-messaging.css" />
+    <link rel="stylesheet" href="https://cdn.notifica.re/libs/web/v3/{{version}}/notificare-push.css" />
+    <link rel="stylesheet" href="https://cdn.notifica.re/libs/web/v3/{{version}}/notificare-push-ui.css" />
 </head>
 <body>
-<p>TEST</p>
-<p>PushBots Web SDK</p>
+<script type="module">
+    import { } from 'https://cdn.notifica.re/libs/web/v3/{{version}}/notificare-core.js';
+    import { } from 'https://cdn.notifica.re/libs/web/v3/{{version}}/notificare-assets.js';
+    import { } from 'https://cdn.notifica.re/libs/web/v3/{{version}}/notificare-geo.js';
+    import { } from 'https://cdn.notifica.re/libs/web/v3/{{version}}/notificare-in-app-messaging.js';
+    import { } from 'https://cdn.notifica.re/libs/web/v3/{{version}}/notificare-inbox.js';
+    import { } from 'https://cdn.notifica.re/libs/web/v3/{{version}}/notificare-push.js';
+    import { } from 'https://cdn.notifica.re/libs/web/v3/{{version}}/notificare-push-ui.js';
+    import { } from 'https://cdn.notifica.re/libs/web/v3/{{version}}/notificare-user-inbox.js';
+
+    // more code ...
+</script>
+
+
+<h1>
+    Bienvenue sur le site de test
+</h1>
+
 </body>
 </html>
